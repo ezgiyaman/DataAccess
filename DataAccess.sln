@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbFirst_LINO_Methods", "DbFirst_LINO_Methods\DbFirst_LINO_Methods.csproj", "{D17A803F-6168-4CD6-9220-044A99EAC15C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_TO_SQL_EXAMPLE", "LINQ_TO_SQL_EXAMPLE\LINQ_TO_SQL_EXAMPLE.csproj", "{48B7AF67-A2E4-43AF-838B-8885C40D2A08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D17A803F-6168-4CD6-9220-044A99EAC15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17A803F-6168-4CD6-9220-044A99EAC15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17A803F-6168-4CD6-9220-044A99EAC15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17A803F-6168-4CD6-9220-044A99EAC15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B7AF67-A2E4-43AF-838B-8885C40D2A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B7AF67-A2E4-43AF-838B-8885C40D2A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B7AF67-A2E4-43AF-838B-8885C40D2A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B7AF67-A2E4-43AF-838B-8885C40D2A08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DCDDC72-C429-4CBD-ABFD-E047B22C25FC}
+	EndGlobalSection
+EndGlobal
