@@ -9,7 +9,7 @@ Entity Framework ORM Modellemede üç farklı yaklaşım kullanır ;
 
 * [Database First](https://github.com/ezgiyaman/DataAccess/tree/master/DbFirst_LINO_Methods)
 * [Code First](https://github.com/ezgiyaman/DataAccess/tree/master/ETicaret_Db_CodeFirst)
-* [Model First]
+* Model First
 
 
 
