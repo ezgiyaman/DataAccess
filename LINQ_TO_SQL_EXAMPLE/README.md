@@ -11,6 +11,9 @@ ADO.NET Entity Framework tarafından oluşturulan varlıkları sorgulamak için 
 ------------|-----------------
 İlişkisel tabloları sınıflarla eşleştirirken sadece 1-1 ilişkisini destekler. | İlişki tablolarını sınıflarla eşleştirirken 1-1,1-Çok,Çok-Çok ilişkisini destekler.
 LINQ to SQL, yalnızca SQL Server ile çalışır. |	Oracle, MySQL, SQL Server, DB2 gibi çeşitli RDBMS ile çalışır.
+Bir modelden veritabanı oluşturamaz. |Bir modelden bir veritabanı oluşturabilir. 
+DataContext kullanarak verileri sorgulamamıza olanak sağlar.|EntitySQL, ObjectContext, DbContext kullanarak verileri sorgulamamıza izin verir. 
+
 
 
 
