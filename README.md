@@ -7,9 +7,9 @@ ORM(Object Relational Mapping) araçlarından biridir.Entity Framework,veritaban
 ## ENTİTY FRAMEWORK YAKLAŞIMLARI 
 Entity Framework ORM Modellemede üç farklı yaklaşım kullanır ;
 
-* # [Database First](https://github.com/ezgiyaman/DataAccess/tree/master/DbFirst_LINO_Methods)
-* # Code First 
-* Model First 
+* [Database First](https://github.com/ezgiyaman/DataAccess/tree/master/DbFirst_LINO_Methods)
+* [Code First](https://github.com/ezgiyaman/DataAccess/tree/master/ETicaret_Db_CodeFirst)
+* [Model First]
 
 
 
