@@ -36,5 +36,19 @@ namespace Dapper_Example
             EmployeesChoose();
         }
 
+        public void ProductChoose()
+        {
+            using (IDbConnection connection = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            {
+                connection.Open();
+                List<Products> products = connection.Query<Products>("Select Top 10 * from Products Where UnitPrice > 20 ").ToList();
+                dataGridView1.DataSource = products;
+                connection.Close();
+            }
+        }
+        private void btnExample_2_Click(object sender, EventArgs e)
+        {
+            ProductChoose();
+        }
     }
 }
