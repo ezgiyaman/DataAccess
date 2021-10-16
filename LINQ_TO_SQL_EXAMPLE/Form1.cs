@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.SqlServer;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -36,7 +37,7 @@ namespace LINQ_TO_SQL_EXAMPLE
 
             #region  Linq to SQL
             var product = from x in db.Products
-                          where x.UnitsInStock > 50 && x.UnitsInStock < 8
+                          where x.UnitsInStock > 50 && x.UnitPrice < 20
                           orderby x.ProductName
                           select new
                           {
@@ -78,6 +79,36 @@ namespace LINQ_TO_SQL_EXAMPLE
             #endregion
         }
 
+        private void btnExample3_Click(object sender, EventArgs e)
+        {
+            #region Linq To Entity
+            dataGridView1.DataSource = db.Employees
+                         .Where(x => SqlFunctions.DateDiff("Year", x.BirthDate, DateTime.Now) > 50 && x.City == "London")
+                         .Select(x => new
+                         {   
+                            Ad = x.FirstName,
+                            Soyad =x.LastName,
+                            Unvan = x.TitleOfCourtesy,
+                            
 
+                         }).ToList();
+
+            #endregion
+
+            #region Linq To Sql
+            var Employees = from emp in db.Employees
+                            where emp.City == "London" && SqlFunctions.DateDiff("Year", emp.BirthDate, DateTime.Now) > 50
+                            select new
+                            {
+                               Ad = emp.FirstName,
+                               Soyad =  emp.LastName,
+                               Unvan = emp.TitleOfCourtesy,
+                               Yas = SqlFunctions.DateDiff("Year", emp.BirthDate, DateTime.Now)
+                               
+                            };
+            #endregion
+
+        }
+     
     }
 }

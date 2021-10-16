@@ -39,18 +39,18 @@ namespace LINQ_TO_SQL_EXAMPLE
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 39);
+            this.dataGridView1.Location = new System.Drawing.Point(73, 39);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(576, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(545, 150);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnExample1
             // 
-            this.btnExample1.Location = new System.Drawing.Point(42, 210);
+            this.btnExample1.Location = new System.Drawing.Point(73, 211);
             this.btnExample1.Name = "btnExample1";
-            this.btnExample1.Size = new System.Drawing.Size(184, 56);
+            this.btnExample1.Size = new System.Drawing.Size(169, 56);
             this.btnExample1.TabIndex = 1;
             this.btnExample1.Text = "1";
             this.btnExample1.UseVisualStyleBackColor = true;
@@ -58,9 +58,9 @@ namespace LINQ_TO_SQL_EXAMPLE
             // 
             // btnExample2
             // 
-            this.btnExample2.Location = new System.Drawing.Point(244, 210);
+            this.btnExample2.Location = new System.Drawing.Point(248, 211);
             this.btnExample2.Name = "btnExample2";
-            this.btnExample2.Size = new System.Drawing.Size(184, 56);
+            this.btnExample2.Size = new System.Drawing.Size(189, 56);
             this.btnExample2.TabIndex = 1;
             this.btnExample2.Text = "2";
             this.btnExample2.UseVisualStyleBackColor = true;
@@ -68,12 +68,13 @@ namespace LINQ_TO_SQL_EXAMPLE
             // 
             // btnExample3
             // 
-            this.btnExample3.Location = new System.Drawing.Point(434, 210);
+            this.btnExample3.Location = new System.Drawing.Point(443, 211);
             this.btnExample3.Name = "btnExample3";
-            this.btnExample3.Size = new System.Drawing.Size(184, 56);
+            this.btnExample3.Size = new System.Drawing.Size(175, 56);
             this.btnExample3.TabIndex = 1;
             this.btnExample3.Text = "3";
             this.btnExample3.UseVisualStyleBackColor = true;
+            this.btnExample3.Click += new System.EventHandler(this.btnExample3_Click);
             // 
             // Form1
             // 

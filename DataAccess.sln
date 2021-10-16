@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbFirst_LINO_Methods", "DbFirst_LINO_Methods\DbFirst_LINO_Methods.csproj", "{D17A803F-6168-4CD6-9220-044A99EAC15C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_TO_SQL_EXAMPLE", "LINQ_TO_SQL_EXAMPLE\LINQ_TO_SQL_EXAMPLE.csproj", "{48B7AF67-A2E4-43AF-838B-8885C40D2A08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_TO_SQL_Example", "LINQ_TO_SQL_EXAMPLE\LINQ_TO_SQL_Example.csproj", "{48B7AF67-A2E4-43AF-838B-8885C40D2A08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret_Db_CodeFirst", "ETicaret_Db_CodeFirst\ETicaret_Db_CodeFirst.csproj", "{9F2FC493-F180-4826-9301-681B15101860}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper_Example", "Dapper_Example\Dapper_Example.csproj", "{8F1AE2EF-5FF7-495E-9CC2-B5F2755795B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9F2FC493-F180-4826-9301-681B15101860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F2FC493-F180-4826-9301-681B15101860}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F2FC493-F180-4826-9301-681B15101860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F1AE2EF-5FF7-495E-9CC2-B5F2755795B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1AE2EF-5FF7-495E-9CC2-B5F2755795B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1AE2EF-5FF7-495E-9CC2-B5F2755795B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1AE2EF-5FF7-495E-9CC2-B5F2755795B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
