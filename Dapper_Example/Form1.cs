@@ -20,35 +20,53 @@ namespace Dapper_Example
             InitializeComponent();
         }
 
-        public void EmployeesChoose()
-        {
-            using (IDbConnection connection = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
-            {
-                connection.Open();
-                List<Employees> employees = connection.Query<Employees>("Select * from Employees Where EmployeeID > 5 ").ToList();
-                dataGridView1.DataSource = employees;
-                connection.Close();
-            }
-        }
-
         private void btnExample_1_Click(object sender, EventArgs e)
         {
-            EmployeesChoose();
-        }
-
-        public void ProductChoose()
-        {
-            using (IDbConnection connection = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            using (IDbConnection con = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
             {
-                connection.Open();
-                List<Products> products = connection.Query<Products>("Select Top 10 * from Products Where UnitPrice > 20 ").ToList();
-                dataGridView1.DataSource = products;
-                connection.Close();
+                con.Open();
+                List<Employees> employees = con.Query<Employees>("Select * from Employees Where EmployeeID > 5 ").ToList();
+                dataGridView1.DataSource = employees;
+                con.Close();
             }
         }
         private void btnExample_2_Click(object sender, EventArgs e)
         {
-            ProductChoose();
+            using (IDbConnection con = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            {
+                con.Open();
+                List<Products> products = con.Query<Products>("Select Top 10 * from Products Where UnitPrice > 20 ").ToList();
+                dataGridView1.DataSource = products;
+                con.Close();
+            }
+        }
+
+        private void btnExample_3_Click(object sender, EventArgs e)
+        {
+            using (IDbConnection con = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            {
+                con.Open();
+                List<Employees> employees = con.Query<Employees>("Select * from Employees where YEAR(BirthDate)>=1950 and YEAR(BirthDate)<=1961").ToList();
+                dataGridView1.DataSource = employees;
+                con.Close();
+            }
+
+        }
+        private void btnExample_4_Click(object sender, EventArgs e)
+        {
+
+            using (IDbConnection con = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            {
+                con.Open();
+                List<Products> products = con.Query<Products>("Select ProductID,ProductName,UnitsInStock from Products where (ProductName Like '[A-K]%')and(UnitsInStock between 5 and 40)").ToList();
+                dataGridView1.DataSource = products;
+                con.Close();
+            }
+        }
+
+        private void btnExample_5_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
