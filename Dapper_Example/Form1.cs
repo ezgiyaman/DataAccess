@@ -66,7 +66,52 @@ namespace Dapper_Example
 
         private void btnExample_5_Click(object sender, EventArgs e)
         {
-            
+            using (IDbConnection con = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            {
+                con.Open();
+                dataGridView1.DataSource = con.Query("Select OrderID, Sum(Quantity) [Satılan Ürün] from [Order Details] group by OrderID").ToList();
+                con.Close();
+            }
+        }
+
+        private void btnExample_6_Click(object sender, EventArgs e)
+        {
+            using (IDbConnection con = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            {
+              con.Open();
+              dataGridView1.DataSource = con.Query("Select OrderID,Sum(UnitPrice * Quantity * (1 - Discount)) as [Tutar] from [Order Details] group by OrderID order by 2 desc").ToList();
+              con.Close();
+            }
+        }
+        private void btnExample_7_Click(object sender, EventArgs e)
+        {
+            using (IDbConnection con = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            { 
+              con.Open();
+              dataGridView1.DataSource = con.Query("Select OrderID, Sum(Quantity) as [Adet] from [Order Details] group by OrderID having sum(Quantity)> 100 order by 2 desc").ToList();
+              con.Close();
+            }
+        }
+        private void btnExample8_Click(object sender, EventArgs e)
+        {  
+            //Count
+            using (IDbConnection con = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            {
+                con.Open();
+                dataGridView1.DataSource = con.Query("select Country, Count(*) as [Çalışan Sayısı] from Employees group by Country").ToList();
+                con.Close();
+            }
+        }
+        private void btnExample_9_Click(object sender, EventArgs e)
+        {
+            //Join
+            using (IDbConnection con = new SqlConnection("Server =DESKTOP-DF88VQJ;Database=Northwind;Integrated Security=True;"))
+            {
+              con.Open();
+              dataGridView1.DataSource = con.Query("select c.CategoryID,c.CategoryName, p.ProductID,p.ProductName from Categories c join Products p on c.CategoryID = p.CategoryID ").ToList();
+              con.Close();
+            }
+                
         }
     }
 }

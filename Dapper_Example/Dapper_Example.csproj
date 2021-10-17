@@ -53,6 +53,7 @@
     <Compile Include="Entities\Abstract\BaseEntity.cs" />
     <Compile Include="Entities\Concretes\Categories.cs" />
     <Compile Include="Entities\Concretes\Employees.cs" />
+    <Compile Include="Entities\Concretes\OrderDetails.cs" />
     <Compile Include="Entities\Concretes\Products.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

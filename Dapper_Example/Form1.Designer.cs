@@ -30,15 +30,19 @@ namespace Dapper_Example
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExample_8 = new System.Windows.Forms.Button();
             this.btnExample_1 = new System.Windows.Forms.Button();
             this.btnExample_2 = new System.Windows.Forms.Button();
             this.btnExample_3 = new System.Windows.Forms.Button();
             this.btnExample_4 = new System.Windows.Forms.Button();
             this.btnExample_5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnExample_6 = new System.Windows.Forms.Button();
+            this.btnExample_7 = new System.Windows.Forms.Button();
+            this.btnExample8 = new System.Windows.Forms.Button();
+            this.btnExample_9 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,18 +56,18 @@ namespace Dapper_Example
             this.dataGridView1.Size = new System.Drawing.Size(678, 328);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button1
+            // btnExample_8
             // 
-            this.button1.Location = new System.Drawing.Point(897, 494);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 68);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnExample_8.Location = new System.Drawing.Point(897, 494);
+            this.btnExample_8.Name = "btnExample_8";
+            this.btnExample_8.Size = new System.Drawing.Size(159, 68);
+            this.btnExample_8.TabIndex = 1;
+            this.btnExample_8.Text = "button1";
+            this.btnExample_8.UseVisualStyleBackColor = true;
             // 
             // btnExample_1
             // 
-            this.btnExample_1.Location = new System.Drawing.Point(12, 12);
+            this.btnExample_1.Location = new System.Drawing.Point(12, 15);
             this.btnExample_1.Name = "btnExample_1";
             this.btnExample_1.Size = new System.Drawing.Size(159, 68);
             this.btnExample_1.TabIndex = 1;
@@ -73,7 +77,7 @@ namespace Dapper_Example
             // 
             // btnExample_2
             // 
-            this.btnExample_2.Location = new System.Drawing.Point(12, 99);
+            this.btnExample_2.Location = new System.Drawing.Point(12, 89);
             this.btnExample_2.Name = "btnExample_2";
             this.btnExample_2.Size = new System.Drawing.Size(159, 68);
             this.btnExample_2.TabIndex = 1;
@@ -83,7 +87,7 @@ namespace Dapper_Example
             // 
             // btnExample_3
             // 
-            this.btnExample_3.Location = new System.Drawing.Point(12, 186);
+            this.btnExample_3.Location = new System.Drawing.Point(12, 163);
             this.btnExample_3.Name = "btnExample_3";
             this.btnExample_3.Size = new System.Drawing.Size(159, 68);
             this.btnExample_3.TabIndex = 1;
@@ -93,7 +97,7 @@ namespace Dapper_Example
             // 
             // btnExample_4
             // 
-            this.btnExample_4.Location = new System.Drawing.Point(12, 272);
+            this.btnExample_4.Location = new System.Drawing.Point(12, 237);
             this.btnExample_4.Name = "btnExample_4";
             this.btnExample_4.Size = new System.Drawing.Size(159, 68);
             this.btnExample_4.TabIndex = 1;
@@ -103,7 +107,7 @@ namespace Dapper_Example
             // 
             // btnExample_5
             // 
-            this.btnExample_5.Location = new System.Drawing.Point(200, 12);
+            this.btnExample_5.Location = new System.Drawing.Point(12, 311);
             this.btnExample_5.Name = "btnExample_5";
             this.btnExample_5.Size = new System.Drawing.Size(159, 68);
             this.btnExample_5.TabIndex = 1;
@@ -111,32 +115,72 @@ namespace Dapper_Example
             this.btnExample_5.UseVisualStyleBackColor = true;
             this.btnExample_5.Click += new System.EventHandler(this.btnExample_5_Click);
             // 
-            // button7
+            // btnExample_6
             // 
-            this.button7.Location = new System.Drawing.Point(200, 99);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(159, 68);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "button1";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnExample_6.Location = new System.Drawing.Point(12, 385);
+            this.btnExample_6.Name = "btnExample_6";
+            this.btnExample_6.Size = new System.Drawing.Size(159, 68);
+            this.btnExample_6.TabIndex = 1;
+            this.btnExample_6.Text = "Example6";
+            this.btnExample_6.UseVisualStyleBackColor = true;
+            this.btnExample_6.Click += new System.EventHandler(this.btnExample_6_Click);
             // 
-            // button8
+            // btnExample_7
             // 
-            this.button8.Location = new System.Drawing.Point(200, 186);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(159, 68);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "button1";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnExample_7.Location = new System.Drawing.Point(12, 459);
+            this.btnExample_7.Name = "btnExample_7";
+            this.btnExample_7.Size = new System.Drawing.Size(159, 68);
+            this.btnExample_7.TabIndex = 1;
+            this.btnExample_7.Text = "Example7";
+            this.btnExample_7.UseVisualStyleBackColor = true;
+            this.btnExample_7.Click += new System.EventHandler(this.btnExample_7_Click);
             // 
-            // button9
+            // btnExample8
             // 
-            this.button9.Location = new System.Drawing.Point(200, 272);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(159, 68);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "button1";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnExample8.Location = new System.Drawing.Point(177, 15);
+            this.btnExample8.Name = "btnExample8";
+            this.btnExample8.Size = new System.Drawing.Size(159, 68);
+            this.btnExample8.TabIndex = 1;
+            this.btnExample8.Text = "Example8";
+            this.btnExample8.UseVisualStyleBackColor = true;
+            this.btnExample8.Click += new System.EventHandler(this.btnExample8_Click);
+            // 
+            // btnExample_9
+            // 
+            this.btnExample_9.Location = new System.Drawing.Point(177, 89);
+            this.btnExample_9.Name = "btnExample_9";
+            this.btnExample_9.Size = new System.Drawing.Size(159, 68);
+            this.btnExample_9.TabIndex = 1;
+            this.btnExample_9.Text = "Example9";
+            this.btnExample_9.UseVisualStyleBackColor = true;
+            this.btnExample_9.Click += new System.EventHandler(this.btnExample_9_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(177, 163);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(159, 68);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "button1";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(177, 237);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(159, 68);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "button1";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(177, 311);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(159, 68);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "button1";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -148,10 +192,14 @@ namespace Dapper_Example
             this.Controls.Add(this.btnExample_3);
             this.Controls.Add(this.btnExample_4);
             this.Controls.Add(this.btnExample_5);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnExample_6);
+            this.Controls.Add(this.btnExample_7);
+            this.Controls.Add(this.btnExample8);
+            this.Controls.Add(this.btnExample_9);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnExample_8);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -163,15 +211,19 @@ namespace Dapper_Example
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExample_8;
         private System.Windows.Forms.Button btnExample_1;
         private System.Windows.Forms.Button btnExample_2;
         private System.Windows.Forms.Button btnExample_3;
         private System.Windows.Forms.Button btnExample_4;
         private System.Windows.Forms.Button btnExample_5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnExample_6;
+        private System.Windows.Forms.Button btnExample_7;
+        private System.Windows.Forms.Button btnExample8;
+        private System.Windows.Forms.Button btnExample_9;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

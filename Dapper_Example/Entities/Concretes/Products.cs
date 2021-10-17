@@ -14,6 +14,8 @@ namespace Dapper_Example.Entities.Concretes
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProductID { get; set; }
+
+        public int CategoryID { get; set; }
         public string ProductName { get; set; }
         public decimal UnitPrice { get; set; }
         public int UnitsInStock { get; set; }
